@@ -273,6 +273,20 @@ class Client extends AbstractTus
         return $this->key;
     }
 
+        /**
+     * Set url.
+     *
+     * @param string $url
+     *
+     * @return Client
+     */
+    public function setUrl(string $url) : self
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+    
     /**
      * Get url.
      *
